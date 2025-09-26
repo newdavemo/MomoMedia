@@ -1,0 +1,57 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.header.scrolled {
+  background: rgba(10, 10, 15, 0.9);
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ff5f9e, #00f0ff);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  opacity: 1;
+}
+
+.circuit-icon {
+  width: 30px;
+  height: 30px;
+  background: url('/assets/circuit.svg') no-repeat center;
+  background-size: contain;
+}
+
+.waveform {
+  width: 60px;
+  height: 30px;
+  background: url('/assets/waveform.svg') no-repeat center;
+  background-size: contain;
+}

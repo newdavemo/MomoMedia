@@ -1,0 +1,40 @@
+.portfolio {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #0a0a0f;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.portfolio-card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(10, 10, 15, 0.8);
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}

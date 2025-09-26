@@ -1,0 +1,28 @@
+.footer {
+  background: linear-gradient(to right, #ff5f9e, #00f0ff);
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  font-weight: bold;
+  transition: text-shadow 0.3s ease;
+}
+
+.social-icons a:hover {
+  text-shadow: 0 0 10px #ffffff;
+}

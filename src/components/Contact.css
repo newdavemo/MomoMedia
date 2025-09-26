@@ -1,0 +1,43 @@
+.contact {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #0a0a0f;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #ff5f9e, #00f0ff) 1;
+  border-radius: 8px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 10px #ff5f9e;
+}
+
+.contact-button {
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff5f9e, #00f0ff);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  animation: pulseGlow 2s infinite;
+}

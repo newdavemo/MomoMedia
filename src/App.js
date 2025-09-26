@@ -1,23 +1,20 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Pricing from './components/Pricing';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   return (
-    <>
-      <Header />
-      <Hero />
-      <Services />
-      <Pricing />
-      <Portfolio />
-      <Contact />
-      <Footer />
-    </>
+    <div className="container">
+      <img
+        src={`${process.env.PUBLIC_URL}/assets/animated_logo.gif`}
+        alt="MomoMedia Logo"
+        className="logo"
+      />
+      <img
+        src={`${process.env.PUBLIC_URL}/assets/Header_Body_Footer.png`}
+        alt="MomoMedia Full Layout"
+        className="layout"
+      />
+    </div>
   );
 }
 

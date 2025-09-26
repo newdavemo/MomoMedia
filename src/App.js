@@ -1,18 +1,27 @@
 import React from 'react';
-import './App.css';
 
 function App() {
   return (
-    <div className="container">
+    <div style={{ backgroundColor: '#0a0a0f', minHeight: '100vh', position: 'relative' }}>
       <img
         src={`${process.env.PUBLIC_URL}/assets/animated_logo.gif`}
         alt="MomoMedia Logo"
-        className="logo"
+        style={{
+          position: 'absolute',
+          top: '2rem',
+          left: '2rem',
+          width: '150px',
+          zIndex: 10,
+        }}
       />
       <img
         src={`${process.env.PUBLIC_URL}/assets/Header_Body_Footer.png`}
         alt="MomoMedia Full Layout"
-        className="layout"
+        style={{
+          width: '100%',
+          height: 'auto',
+          display: 'block',
+        }}
       />
     </div>
   );

@@ -10,7 +10,7 @@ function App() {
           position: 'absolute',
           top: '2rem',
           left: '2rem',
-          width: '150px',
+          width: '160px',
           zIndex: 10,
         }}
       />
